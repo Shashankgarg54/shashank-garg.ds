@@ -1,0 +1,8 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+// Function to remove an element by value
+void remove_by_value(vector<int>& arr, int value) {
+    bool found = false;
+    for (auto
