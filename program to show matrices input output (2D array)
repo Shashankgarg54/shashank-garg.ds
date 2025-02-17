@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+// Function to input a matrix
+void input_matrix(int rows, int cols, int matrix[rows][cols]) {
+    printf("Enter the elements of the matrix row by row:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("Element [%d][%d]: ", i + 1, j + 1);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+}
+
+// Function to output a matrix
+void output_matrix(int rows, int cols, int matrix[rows][cols]) {
+    printf("The matrix is:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
